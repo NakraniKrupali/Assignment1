@@ -74,6 +74,24 @@ var create_Dir = () => {
    });
 };
 
+var removeDirWizard = () => {
+  rl.question("Enter Directory Name :- ",(ans) => {
+    dirname = ans;
+    removeDir();
+  })
+};
+
+var removeDir = () => {
+   fs.rmdir(dirname,(err) => {
+      if(err){
+        console.log(err);
+      }else{
+        console.log("Directory Removed Successfully...!");
+      }
+      repeat();
+   });
+};
+
 var repeat = () => {
   instruction();
   start();
