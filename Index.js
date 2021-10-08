@@ -122,7 +122,7 @@ var readFileWizard = () => {
          if(err){
             console.log(err);
          }else{
-           console.log("\n=========== " + filename + ".txt" + " ===========\n)
+           console.log("\n=========== " + filename + ".txt" + " ===========\n");
             console.log(result);
          }
          repeat();
