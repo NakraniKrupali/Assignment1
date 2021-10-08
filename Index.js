@@ -109,7 +109,7 @@ var writeFileData = () => {
       }
       else
       {
-        console.log("File Created SuccessFully...!",filename);
+        console.log(filename + ".txt File Created SuccessFully...");
       }
       repeat();
    });
@@ -122,6 +122,7 @@ var readFileWizard = () => {
          if(err){
             console.log(err);
          }else{
+           console.log("\n=========== " + filename + ".txt" + " ===========\n)
             console.log(result);
          }
          repeat();
@@ -135,7 +136,7 @@ var deleteFileWizard = () => {
          if(err){
               console.log(err);
          }else{
-              console.log(ans + " File Deleted SuccessFully ....");
+              console.log(ans +".txt" + " File Deleted SuccessFully....");
          }
          repeat();
      });
@@ -143,7 +144,7 @@ var deleteFileWizard = () => {
 };
 
 var appendFileWizard = () => {
-  rl.question("Enter File Name To A Append : ",(ans) => {
+  rl.question("Enter File Name  : ",(ans) => {
      filename = ans;
      rl.question("Enter Content :",(ans) => {
         content = ans;
