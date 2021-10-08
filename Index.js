@@ -11,9 +11,9 @@ var filename = "";
 var content = "";
 
 var instruction = () => {
-  console.log("\n====================== MAIN MENU ======================\n");
-   console.log("\n Enter 1. for Create  Directory ");
-   console.log("\n Enter 2. for Remove Directory ");
+  console.log("\n====================== MAIN MENU ======================");
+   console.log("Enter 1. for Create  Directory ");
+   console.log("Enter 2. for Remove Directory ");
    console.log("\n Enter 3. for Write File");
    console.log("\n Enter 4. for Read File..");
    console.log("\n Enter 5. for Delete a text file");
