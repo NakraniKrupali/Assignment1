@@ -1,2 +1,2 @@
 # NodeFSM
-console.log("Hello world!");
+Node File System Module
