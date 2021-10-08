@@ -86,7 +86,7 @@ var removeDir = () => {
       if(err){
         console.log(err);
       }else{
-        console.log("Directory Removed Successfully...!");
+        console.log(dirname + " Directory Removed Successfully...");
       }
       repeat();
    });
