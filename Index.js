@@ -57,10 +57,21 @@ var start = () => {
 
 var createDirWizard = () => {
   console.log("\n Welcome to the file Creation Wizard");
-  rl.question("Name Of The Directory :-",(ans) => {
+  rl.question("Name Of The Directory : ",(ans) => {
      dirname = ans;
      create_Dir();
   });
+};
+
+var create_Dir = () => {
+   fs.mkdir(dirname,(err) => {
+      if(err){
+        console.log(err);
+      }else{
+        console.log(dirname +" Directory Created SuccessFully..." );
+      }
+      repeat();
+   });
 };
 
 var repeat = () => {
