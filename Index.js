@@ -11,16 +11,16 @@ var filename = "";
 var content = "";
 
 var instruction = () => {
-  console.log("\n====================== MAIN MENU ======================");
+  console.log("\n====================== MAIN MENU ======================\n");
    console.log("Enter 1. for Create  Directory ");
    console.log("Enter 2. for Remove Directory ");
-   console.log("\n Enter 3. for Write File");
-   console.log("\n Enter 4. for Read File..");
-   console.log("\n Enter 5. for Delete a text file");
-   console.log("\n Enter 6. for Append Data To file");
-   console.log("\n Enter 7. for Update / Replace file with new data ");
-   console.log("\n Enter 8. for Rename a text file");
-   console.log("\n Enter 0. for exit");
+   console.log("Enter 3. for Write File");
+   console.log("Enter 4. for Read File..");
+   console.log("Enter 5. for Delete a text file");
+   console.log("Enter 6. for Append Data To file");
+   console.log("Enter 7. for Update / Replace file with new data ");
+   console.log("Enter 8. for Rename a text file");
+   console.log("Enter 0. for Exit");
 };
 
 var start = () => {
